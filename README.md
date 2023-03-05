@@ -146,6 +146,8 @@ public:
 	virtual bool init(Person*& person) = 0;
 	//显示身份信息
 	virtual void showIdentity() = 0;
+	//虚析构函数
+	virtual ~Person() {}
 protected:
 	//id
 	int _id;
@@ -158,6 +160,7 @@ protected:
 };
 ```
 继承抽象类，并实例化纯虚函数
+
 ![继承关系](https://user-images.githubusercontent.com/54742361/222948540-d44de5bf-f750-4b5a-9e90-d29551d30668.png)
 #### 5）多态
 使用父类指针指向子类对象
